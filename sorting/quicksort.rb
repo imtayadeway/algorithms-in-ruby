@@ -4,12 +4,12 @@ def quicksort(array)
   pivot = array.sample
   array.delete_at(array.index(pivot))
   less = []
-  greather = []
+  greater = []
   array.each do |element|
     if element <= pivot
       less << element
     else
-      greather << element
+      greater << element
     end
   end
 
